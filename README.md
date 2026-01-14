@@ -19,6 +19,8 @@ Sistema completo de registro de usuarios con arquitectura limpia, stored procedu
 ### Extras
 - ✅ Frontend React + TypeScript + Tailwind CSS responsive
 - ✅ Docker Compose para orquestación completa
+- ✨ **Actualización de Interfaz (UI):** Mejoras en el layout, buscador integrado y diseño optimizado para móvil y desktop.
+- 🗑️ **Borrado Seguro:** Implementación de *Soft Delete* para preservar la integridad de los datos.
 
 ---
 
@@ -168,12 +170,24 @@ Abrir http://localhost:5173 y completar formulario
 
 ## 📸 Screenshots
 
-### Frontend
+### Interfaz de Usuario (UI Update)
+![Listado de Usuarios](docs/images/listado-usuarios.png)
+*Nueva vista de listado con buscador y botón de creación alineados*
+
+![Nuevo Usuario](docs/images/nuevo-usuario.png)
+*Modal optimizado para la creación de nuevos usuarios*
+
+![Editar Usuario](docs/images/editar-usuario.png)
+*Modal de edición con precarga completa de datos y ubicaciones*
+
+---
+
+### Frontend Original
 ![Formulario de Registro](docs/images/formulario.png)
-*Formulario de registro con validaciones y selección de ubicación*
+*Formulario de registro original con validaciones*
 
 ![Vista Completa](docs/images/front-all.png)
-*Aplicación completa funcionando*
+*Aplicación inicial completa*
 
 ### Base de Datos
 ![Tabla Países](docs/images/pais.png)

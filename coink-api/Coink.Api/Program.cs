@@ -2,6 +2,10 @@ using Coink.Application.Interfaces;
 using Coink.Application.Services;
 using Coink.Infrastructure.Db;
 using Coink.Infrastructure.Repositories;
+using Dapper;
+
+// Configure Dapper to map underscore_names to PascalCase properties
+DefaultTypeMap.MatchNamesWithUnderscores = true;
 
 var builder = WebApplication.CreateBuilder(args);
 

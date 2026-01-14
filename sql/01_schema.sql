@@ -28,6 +28,7 @@ CREATE TABLE app_user (
     country_id INT NOT NULL,
     department_id INT NOT NULL,
     municipality_id INT NOT NULL,
+    row_status INT DEFAULT 1,
     created_at TIMESTAMP DEFAULT now(),
 
     CONSTRAINT fk_user_country FOREIGN KEY (country_id) REFERENCES country(id),
