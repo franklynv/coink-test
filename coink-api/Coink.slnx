@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Coink.Api/Coink.Api.csproj" />
+  <Project Path="Coink.Application/Coink.Application.csproj" />
+  <Project Path="Coink.Domain/Coink.Domain.csproj" />
+  <Project Path="Coink.Infrastructure/Coink.Infrastructure.csproj" />
+</Solution>
