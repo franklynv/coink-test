@@ -3,6 +3,7 @@ import { api } from "./api";
 import UserTable from "./components/UserTable";
 import UserModal from "./components/UserModal";
 import type { User } from "./types";
+import { useDebounce } from "./hooks/useDebounce";
 
 export default function App() {
   const [users, setUsers] = useState<User[]>([]);
@@ -13,6 +14,7 @@ export default function App() {
   const [loading, setLoading] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedUser, setSelectedUser] = useState<User | null>(null);
+  const debouncedSearch = useDebounce(search, 500);
 
   const loadUsers = async () => {
     try {
@@ -31,7 +33,7 @@ export default function App() {
 
   useEffect(() => {
     loadUsers();
-  }, [page, search]);
+  }, [page, debouncedSearch]);
 
   const handleEdit = (user: User) => {
     setSelectedUser(user);
